@@ -1,10 +1,10 @@
-🖥️ Single Request Server - C++ TCP Server for Fun & Learning! 🚀
+🖥️ Forever Running Server - C++ TCP Server for Fun & Learning! 🚀
 
-Welcome to Single Request Server, a **minimalistic C++ TCP server** designed to handle a single client request at a time! This project is perfect for those just getting started with socket programming or anyone looking to brush up on their networking skills. It's lightweight, simple, and sends a proper HTTP response to client requests!
+Welcome to **Forever Running Server**, a **minimalistic C++ TCP server** designed to serve continuosly client requests in an infinite loop! This project is perfect for those who want to deepen their understanding of socket programming and network communication. It's lightweight, simple, and sends a proper HTTP response to client requests!
 
 🌟 Features
 * Simple TCP server built with C++.
-* Handles one connection at a time — easy and  straightforward.
+* Handles multiple connections in a loop — easy and straightforward.
 * Responds with "Hello, World!" via a proper HTTP/1.1 response.
 * Customizable port (default: 8080).
 
@@ -22,7 +22,7 @@ Welcome to Single Request Server, a **minimalistic C++ TCP server** designed to 
 
 2. **Navigate to the project directory**:
    ```bash
-   cd linux-servers/single-request-server
+   cd linux-servers/forever-running-server
    ``` 
 
 3. **Create a build directory**:
@@ -42,7 +42,7 @@ Welcome to Single Request Server, a **minimalistic C++ TCP server** designed to 
 
 6. **Running the Server**:
    ```bash
-   ./SingleRequestServer
+   ./ForeverRunningServer
    ```
 7. **Example Client Request (using curl)**:
    ```bash
@@ -58,7 +58,7 @@ The server listens for incoming connections on port 8080 and sends back a simple
 3. Listens for a connection.
 4. Accepts the connection and reads the client's request.
 5. Responds with a 200 OK HTTP message and a "Hello, World!" message.
-6. Closes the connection.
+6. Closes the connection and goes back to listening for the next one.
 
 
 ### 🌍 Real-World Use Cases
@@ -68,6 +68,7 @@ While this server only handles a single connection, it's a great starting point 
 * Building a small web server.
 * Learning the basics of networking with sockets.
 * Exploring how HTTP works at a low level.
+* Developing more complex server applications.
 
 ### 📝 License
 This project is licensed under the MIT License.
