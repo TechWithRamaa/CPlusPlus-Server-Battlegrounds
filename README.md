@@ -1,4 +1,4 @@
-# Ctrl-Alt-Serve-with-C++-Servers
+# CPlusPlus-Server-Battlegrounds
 
 Welcome to the **Ctrl-Alt-Serve** repository! 🎉
 
@@ -20,7 +20,7 @@ This repository is a collection of **C++ servers and clients** for both Linux an
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/Ctrl-Alt-Serve-with-C++-Servers.git
+   git clone https://github.com/yourusername/CPlusPlus-Server-Battlegrounds.git
    ```
 
 2. **Navigate to a specific server/client directory**:
