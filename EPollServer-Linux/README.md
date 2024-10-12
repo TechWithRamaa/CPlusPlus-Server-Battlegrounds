@@ -1,4 +1,4 @@
-# Non-Blocking Async Server with Epoll
+# EPollServer - A Non-Blocking Async I/O Server 
 
 ## Overview
 
