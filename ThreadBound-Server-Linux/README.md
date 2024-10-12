@@ -4,10 +4,10 @@ Welcome to ThreadBound Server – a simple yet insightful C++ TCP server for Lin
 This project is built to handle multiple client requests using a thread-per-client model, which allows each client to be handled in its own thread. This is a great starting point for learning about network programming, socket handling, and multi-threading in C++.
 
 ### 🔥 Features
-Multi-threaded Client Handling: Each client gets its own thread, allowing multiple simultaneous connections.
-Simple TCP/IP Setup: Easy-to-understand code that sets up basic TCP communication.
-Ever-running Server: The server continuously runs, accepting new client connections.
-Customizable Port (default: 8080): Modify it to fit your needs.
+- Multi-threaded Client Handling: Each client gets its own thread, allowing multiple simultaneous connections.
+- Simple TCP/IP Setup: Easy-to-understand code that sets up basic TCP communication.
+- Ever-running Server: The server continuously runs, accepting new client connections.
+- Customizable Port (default: 8080): Modify it to fit your needs.
 
 ### 🛠️ Requirements
 Linux operating system
