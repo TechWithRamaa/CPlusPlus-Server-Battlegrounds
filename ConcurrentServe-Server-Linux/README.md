@@ -1,4 +1,4 @@
-# Multi-Threaded TCP Server
+# ConcurrentServe-Server
 
 This project implements a simple multi-threaded TCP server using a thread pool. The server listens for incoming client connections and responds with a pre-defined message. It can handle multiple clients concurrently by using a fixed number of worker threads, making it suitable for lightweight, concurrent request handling.
 
