@@ -13,28 +13,28 @@ Welcome to the **CPlusPlus-Server-Battlegrounds**! This repository showcases a c
 ## Projects Overview
 
 ### 1. SingleRequest-Server
-- **Characteristics**: Handles one request at a time, focusing on simplicity and ease of understanding.
-- **Limitations**: Not suitable for high-load scenarios as it cannot handle concurrent requests.
+- **Characteristics**: Handles one request at a time, focusing on simplicity and ease of understanding
+- **Limitations**: Not suitable for high-load scenarios as it cannot handle concurrent requests
 
 ### 2. ForeverServe-Server
-- **Characteristics**: Designed to run indefinitely, maintaining state across multiple client connections and sessions.
-- **Limitations**: Resource management can be challenging, leading to potential memory leaks if not handled properly.
+- **Characteristics**: Handles one connection at a time in a blocking manner, using a while loop to continuously accept new connections
+- **Limitations**: Not suitable for high-load scenarios as it cannot handle concurrent requests
 
 ### 3. ThreadBound-Server
-- **Characteristics**: Ties server threads to specific client connections, ensuring dedicated resources for each client.
-- **Limitations**: May lead to inefficient resource utilization and increased overhead in managing threads.
+- **Characteristics**: Each connection is handled in its own thread, allowing multiple connections to be processed simultaneously
+- **Limitations**: Can scale by increasing the number of threads; however, thread limits depend on system resources
 
 ### 4. ConcurrentServe-Server
-- **Characteristics**: This server supports concurrent connections, allowing multiple clients to interact with the server simultaneously.
-- **Limitations**: May face performance degradation under heavy load due to thread contention.
+- **Characteristics**: Handles requests in threads pulled from a thread pool, allowing multiple clients to be processed simultaneously
+- **Limitations**: Can be scaled by adjusting the thread pool size or by implementing a dynamic thread pool that adjusts based on load
 
 ### 5. NonBlocking-AsyncIO-Server
-- **Characteristics**: Implements non-blocking I/O operations, allowing the server to handle requests asynchronously without blocking threads.
-- **Limitations**: Complexity in implementation and potential for callback hell if not managed properly.
+- **Characteristics**: Implements non-blocking I/O operations, allowing the server to handle requests asynchronously without blocking threads
+- **Limitations**: Complexity in implementation
 
 ### 6. EPollServer
-- **Characteristics**: Utilizes Linux's `epoll` for efficient I/O event handling, making it suitable for applications with a large number of simultaneous connections.
-- **Limitations**: Limited to Linux environments; complexity in managing edge-triggered events.
+- **Characteristics**: Utilizes Linux's `epoll` for efficient I/O event handling, making it suitable for applications with a large number of simultaneous connections
+- **Limitations**: Limited to Linux environments; complexity in managing edge-triggered events
 
 
 ## Getting Started
